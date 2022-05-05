@@ -1,0 +1,95 @@
+body{
+    padding: 10px;
+    margin: 0px;
+    background: #ffeb3b;
+}
+
+.shadow-typo{
+    position: relative;
+    display: inline-block;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #00b3b4;
+    font-family: 'Bubblegum Sans', cursive;
+    text-shadow: 3px 3px 0px #e7eef1, 8px 8px 0px rgba(0, 0, 0, 0.1); 
+
+    margin: 20px 0px;
+}
+
+.threedee-typo{
+    margin: 20px 0px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #f2395a;
+    transform: skew(-5deg, -5deg) rotate(5deg);
+        -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+    transform-origin: center center;
+        -webkit-transform-origin: center center;
+    text-shadow: 1px 1px #d10e31,
+                 2px 2px #d10e31,
+                 3px 3px #d10e31,
+                 4px 4px #d10e31,
+                 5px 5px #d10e31,
+                 6px 6px #d10e31,
+                 7px 7px #d10e31,
+                 8px 8px #890920,
+                 9px 9px #890920,
+                 10px 10px #890920,
+                 11px 11px 15px rgba(0,0,0,0.5);
+}
+
+h3 {
+    font-family: 'Bubblegum Sans', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -90%);
+    margin: 0;
+    padding: 0;
+    color: magenta;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-shadow: 0 5px 0 rgba(0, 0, 0, 1),
+                 0 10px 40px rgba(0, 0, 0, .2),
+                 0 20px 30px rgba(0, 0, 0, .2),
+                 0 30px 20px rgba(0, 0, 0, .2);
+}
+
+       h3:before{
+            content: attr(data-title);
+            position: absolute;
+            top: -5px;
+            left: 0;
+            text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+            color: hotpink ;
+            transition: 0.3s;
+        }
+        h3:after{
+            content: attr(data-title);
+            position: absolute;
+            top: -10px;
+            left: 0;
+            text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+            color: lightpink;
+            transition: 0.3s;
+        }
+
+        h3:hover:before{
+            top: -10px;
+            left: 10px;
+        }
+        h3:hover:after{
+            top: -20px;
+            left: 20px;
+        }
+
+        h3:hover{
+            text-shadow: -10px 10px 0 rgb(0, 0, 0, 1),
+            0 10px 40px rgba(0, 0, 0, .2),
+            0 20px 30px rgba(0, 0, 0, .5),
+            20px 20px 20px rgba(0, 0, 0, .5); 
+        }
